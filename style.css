@@ -13,7 +13,11 @@ body {
 h2 {
     text-transform: uppercase;
     letter-spacing: 3px;
-    font-size: 30px;
+    font-size: 30px; 
+}
+
+h3 {
+    margin: 10px auto;
 }
 
 .clock {
@@ -55,3 +59,29 @@ h2 {
     background-color: lightgreen;
 }
 
+@media (max-width: 450px){
+    .clock span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        height: 60px;
+        background-color: rgb(237, 145, 244);
+        opacity: 0.8;
+        font-size: 40px;
+        text-shadow: 2px 2px 4px rgba(0,0,0, 0.3);
+    }
+
+    .clock .text {
+        height: 25px;
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        background-color: rgb(255, 168, 174);
+        opacity: 0.8;
+    }
+
+    h2 {
+        margin: 10px auto;
+    }
+}
